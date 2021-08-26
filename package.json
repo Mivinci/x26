@@ -1,0 +1,19 @@
+{
+  "name": "x26",
+  "version": "0.0.1",
+  "description": "A man an his 26 projects",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "mivinci",
+  "license": "ISC",
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.19",
+    "svelte": "^3.42.3",
+    "svelte-windicss-preprocess": "^4.0.12",
+    "vite": "^2.5.1",
+    "windicss": "^3.1.7"
+  }
+}
