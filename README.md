@@ -4,7 +4,7 @@ x26 is a single web page, you can use it for aggregating projects or as your per
 
 ## Usage
 
-### **Step 1 -  Installation**
+### Step 1 -  Installation
 
 Clone this repo and install all the dependencies.
 
@@ -16,7 +16,7 @@ pnpm i
 
 x26 uses [pnpm](https://pnpm.io) for module management, so make sure you have both [Node](https://nodejs.org) and and pnpm installed on your device.
 
-You can use whatever method you like to install pnpm. (e.g npm)
+You can use whatever tools you like to install pnpm. (e.g. npm)
 
 ```bash
 npm i -g pnpm
@@ -24,15 +24,15 @@ npm i -g pnpm
 
 ### Step 2 - Preview
 
-Once you have all dependencies installed correctly, preview it by running:
+Once you have all dependencies installed correctly, preview x26 by running:
 
 ```bash
 pnpm dev
 ```
 
-You'll see x26 is served at `localhost:3000`, open your browser to give it a try!
+You'll see x26 is serving at `localhost:3000`, then open your browser to give it a try!
 
-### **Step 3 - Configuration**
+### Step 3 - Configuration
 
 You tell x26 what to render on the web page by editing a configuration file named `x26.json` under the root of this repo. Here's an [example](https://www.fastmock.site/mock/3fd821284f288a4b2d1659ced3207b47/x26/mock) that's used by x26 itself to generate the [previewing site](https://26.xjj.pub).
 
@@ -114,7 +114,7 @@ Optionally, you can use pnpm to preview the bundled version at  `localhost:5000`
 pnpm preview
 ```
 
-### Step - 5 Deploy
+### Step 5 - Deploy
 
 In this part, we're gonna use the GitHub Action to automatically build our x26 site once we make a commit and push. (Of course, you can use whatever you like to deploy x26, that there's no other workarounds except hosting the `dist` directory.)
 
