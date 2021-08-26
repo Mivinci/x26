@@ -57,7 +57,7 @@ pnpm dev
       "red": "出错"
     }
   },
-	"projects": {
+  "projects": {
     "X": {
       "name": "x26",
       "description": "x26 is a single web page, you can use it for aggregating projects or as your personal homepage.",
@@ -75,7 +75,7 @@ pnpm dev
 
 如果完成了第 2 步，网页会实时自动与该配置文件同步，所以接下来试着更改 `x26.json` 中的字段值来观察哪个字段被渲染到网页的哪个部分，从而了解到 x26 的工作原理。注意下面几个字段值有特别限制
 
-| 字段   | 支持的值                 |
+| 字段   | 支持的值                         |
 | ------ | -------------------------------- |
 | status | green, yellow, red               |
 | shape  | normal, horizon, vertical, large |
