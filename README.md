@@ -2,7 +2,11 @@
 
 x26 is a single web page, you can use it for aggregating projects or as your personal homepage. [View 👀](https://26.xjj.pub)
 
+Here's [中文文档](./docs/README-ZH.md)
+
 ## Usage
+
+Follow the 6 steps below and you'll get your persion x26 site.
 
 ### Step 1 -  Installation
 
