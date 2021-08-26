@@ -69,7 +69,11 @@
   }
 
   .open {
-    @apply absolute w-full h-full z-10 transform-none text-lg;
+    @apply absolute w-full h-full z-10 text-lg transform-none;
+  }
+  
+  :global(*) {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   :global(body) {
