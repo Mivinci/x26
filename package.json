@@ -4,6 +4,7 @@
   "description": "A man an his 26 projects",
   "scripts": {
     "dev": "vite",
+    "dev:host": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },

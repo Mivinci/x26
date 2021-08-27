@@ -7,17 +7,18 @@
 {#if detail && !hidden}
   <div class="p-10 text-left" class:hidden>
     <h1 class="mb-3 text-3xl">{detail.name}</h1>
-    <div class="mb-3 text-sm text-{detail.status}-400 
-      flex items-center flex-wrap gap-2"
-    >
+    <!-- I could've used `gap-2` to seperate `span`s, but some browsers suck!  -->
+    <div class="mb-1 text-sm text-{detail.status}-400 
+      flex items-center flex-wrap">
       {#each detail.tags as tag}
-        <span class="px-2 py-1 rounded-sm bg-white">{tag}</span>
+        <span class="px-2 py-1 mr-2 mb-2 rounded-sm bg-white">{tag}</span>
       {/each}
     </div>
     <p class="mb-3 text-sm">{detail.description}</p>
-    <div class="flex items-center gap-2">
+    <div class="flex items-center">
       <a href={detail.homepage}>
         <svg
+          class="mr-2"
           t="1629950489487"
           viewBox="0 0 1024 1024"
           version="1.1"
@@ -34,6 +35,7 @@
       </a>
       <a href={detail.repository}>
         <svg
+          class="mr-2"
           t="1629948903892"
           viewBox="0 0 1024 1024"
           version="1.1"
