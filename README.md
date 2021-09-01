@@ -6,7 +6,7 @@ Here's [中文文档](./docs/README-ZH.md)
 
 ## Usage
 
-Follow the 6 steps below and you'll get your persion x26 site.
+Follow the 6 steps below and you'll get yourself an x26 site.
 
 ### Step 1 -  Installation
 
