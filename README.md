@@ -1,6 +1,6 @@
 # x26
 
-You can use x26 as your personal homepage or to present your projects. [View 👀](https://26.xjj.pub)
+You can use x26 as your personal homepage or to present your projects.  Here's the demo site: https://26.xjj.pub 👀
 
 [中文文档](./docs/README-ZH.md)
 
@@ -8,19 +8,19 @@ You can use x26 as your personal homepage or to present your projects. [View �
 
 Follow the 6 steps below and you'll get yourself an x26 site.
 
-### Step 1 -  Installation
+### Step 1 -  Install
 
 Clone this repo and install all the dependencies.
 
 ```bash
-git clone git@github.com:mivinci/x26.git
+git clone https://github.com:mivinci/x26.git
 cd x26
 pnpm i
 ```
 
 x26 uses [pnpm](https://pnpm.io) for module management, so make sure you've got both [Node](https://nodejs.org) and and pnpm installed on your device.
 
-You can use whatever tools you like to install pnpm. (e.g. npm)
+You can use whatever tools you like to install pnpm.  (e.g.  npm)
 
 ```bash
 npm i -g pnpm
@@ -38,7 +38,7 @@ You'll see x26 is serving at `localhost:3000`, then open this address in your br
 
 ### Step 3 - Configuration
 
-You tell x26 what to render by editing a configuration file named `x26.json` under the root of this repo. Here's an [example](https://www.fastmock.site/mock/3fd821284f288a4b2d1659ced3207b47/x26/mock) used by x26 itself to generate the [demo site](https://26.xjj.pub).
+You tell x26 what to render by editing a configuration file named `x26.json` under the root of this repo.  Here's an [example](https://www.fastmock.site/mock/3fd821284f288a4b2d1659ced3207b47/x26/mock) used by x26 itself to generate the [demo site](https://26.xjj.pub).
 
 If you've done step 2, x26 will refresh instantly when you update what's in the configuration file.
 
@@ -120,13 +120,13 @@ pnpm preview
 
 ### Step 5 - Deploy
 
-In this part, we're gonna use the GitHub Action to automatically build our x26 site once we push a new commit. (Of course, you can use whatever you like to deploy x26. There's no other workarounds except hosting the `dist` directory.)
+In this part, we're gonna use the GitHub Action to automatically build our x26 site once we push a new commit.  (Of course, you can use whatever you like to deploy x26.  There's no other workarounds except hosting the `dist` directory.)
 
 > Note: You need to fork this repo if you wanna keep following this documentation.
 
-I've written a workflow [configurations](./.github.workflows/deploy.yml), all you need to do is update the `cname` at line 29. If you don't have a domain name, just remove it.
+I've written a workflow [configurations](./.github.workflows/deploy.yml), all you need to do is update the `cname` at line 29.  If you don't have a domain name, just remove it.
 
-You might notice that we used a Action Plugin called `actions-gh-pages`, this plugin will make a branch called `gh-pages` for our repo, thus you need to switch the GitHub Pages to this branch. 
+You might notice that we used a Action Plugin called `actions-gh-pages`, this plugin will make a branch called `gh-pages` for our repo, thus you need to switch the GitHub Pages to this branch.  
 
 Now we're done.
 
