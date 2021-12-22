@@ -1,8 +1,8 @@
 # x26
 
-x26 is a single web page, you can use it for aggregating projects or as your personal homepage. [View 👀](https://26.xjj.pub)
+You can use x26 as your personal homepage or to present your projects. [View 👀](https://26.xjj.pub)
 
-Here's [中文文档](./docs/README-ZH.md)
+[中文文档](./docs/README-ZH.md)
 
 ## Usage
 
@@ -18,7 +18,7 @@ cd x26
 pnpm i
 ```
 
-x26 uses [pnpm](https://pnpm.io) for module management, so make sure you have both [Node](https://nodejs.org) and and pnpm installed on your device.
+x26 uses [pnpm](https://pnpm.io) for module management, so make sure you've got both [Node](https://nodejs.org) and and pnpm installed on your device.
 
 You can use whatever tools you like to install pnpm. (e.g. npm)
 
@@ -28,19 +28,19 @@ npm i -g pnpm
 
 ### Step 2 - Preview
 
-Once you have all dependencies installed correctly, preview x26 by running:
+Preview x26 by running:
 
 ```bash
 pnpm dev
 ```
 
-You'll see x26 is serving at `localhost:3000`, then open your browser to give it a try!
+You'll see x26 is serving at `localhost:3000`, then open this address in your browser.
 
 ### Step 3 - Configuration
 
-You tell x26 what to render on the web page by editing a configuration file named `x26.json` under the root of this repo. Here's an [example](https://www.fastmock.site/mock/3fd821284f288a4b2d1659ced3207b47/x26/mock) that's used by x26 itself to generate the [previewing site](https://26.xjj.pub).
+You tell x26 what to render by editing a configuration file named `x26.json` under the root of this repo. Here's an [example](https://www.fastmock.site/mock/3fd821284f288a4b2d1659ced3207b47/x26/mock) used by x26 itself to generate the [demo site](https://26.xjj.pub).
 
-If you've done step 2, x26 will refresh instantly as you edit the configuration file.
+If you've done step 2, x26 will refresh instantly when you update what's in the configuration file.
 
 #### **Two Modes**
 
@@ -48,7 +48,7 @@ Before you go further, you have to know that x26 has two sources to fetch data f
 
 - **Local mode**
 
-If you want x26 to know what to generate at compile-time, just put all the values in `x26.json` as below.
+If you want x26 to generate the content at compile-time, just put everything in file `x26.json` as follows.
 
 ```json
 {
@@ -80,9 +80,9 @@ If you want x26 to know what to generate at compile-time, just put all the value
 }
 ```
 
-Try to edit `x26.json` to see which field of value effects which part of the page.
+Try to edit `x26.json` to see which field decides which part of the page.
 
-Here're some tips you may need to have eyes on.
+Here're some tips you may need to have your eyes on.
 
 | Key    | Supported Values                 |
 | ------ | -------------------------------- |
@@ -91,7 +91,7 @@ Here're some tips you may need to have eyes on.
 
 - **network mode**
 
-x26 is able to fetch data from remote sources, just assign `"network"` to `mode` in `x26.json` and then provide the address to the source.
+x26 is able to fetch data from remote sources, just switch it to `network mode` as follows and do not forget to provide the remote address to the source.
 
 ```json
 {
@@ -100,17 +100,17 @@ x26 is able to fetch data from remote sources, just assign `"network"` to `mode`
 }
 ```
 
-The remote source must response data of the same format correspond to what we've discussed about `local mode`.
+The remote source must response data of the same format as what we've discussed on `local mode`.
 
 ### Step 4 - Build
 
-When you're satisfied with what've done, use pnpm to build x26 for deployment
+When you're satisfied with what your x26 page looks like, use pnpm to build for deployment.
 
 ```bash
 pnpm build
 ```
 
-You'll see a new directory named `dist` being generated there.
+You'll see a new directory named `dist` being generated.
 
 Optionally, you can use pnpm to preview the bundled version at  `localhost:5000`  by running
 
@@ -120,16 +120,15 @@ pnpm preview
 
 ### Step 5 - Deploy
 
-In this part, we're gonna use the GitHub Action to automatically build our x26 site once we make a commit and push. (Of course, you can use whatever you like to deploy x26, that there's no other workarounds except hosting the `dist` directory.)
+In this part, we're gonna use the GitHub Action to automatically build our x26 site once we push a new commit. (Of course, you can use whatever you like to deploy x26. There's no other workarounds except hosting the `dist` directory.)
 
-> Note: You need to fork this repo if you wanna keep reading.
+> Note: You need to fork this repo if you wanna keep following this documentation.
 
 I've written a workflow [configurations](./.github.workflows/deploy.yml), all you need to do is update the `cname` at line 29. If you don't have a domain name, just remove it.
 
 You might notice that we used a Action Plugin called `actions-gh-pages`, this plugin will make a branch called `gh-pages` for our repo, thus you need to switch the GitHub Pages to this branch. 
 
-And we've done.
-
+Now we're done.
 
 
 ## Feedbacks
